@@ -25,12 +25,12 @@ function Example() {
 * Project website
 * Project documentation
 * Runtime CSS generation
-* Opt-in AOT compilation
 * TypeScript support 
 
 # 1.0 Considerations
 * FlowType support
 * React Native support
 * Server-side Rendering support
+* Opt-in AOT compilation
 
 
