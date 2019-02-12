@@ -5,7 +5,7 @@
 React hook applying scoped CSS to a component.
 
 # Goal
-Our goal is to create a go to solution for component styling in React community that is pragmatic, optimized, easy to use and well documented. 
+Providing the simplest and viable way of introducing CSS into React applications. No external dependencies. Just a hook.
 
 # Potential syntax
 
