@@ -25,16 +25,11 @@ function Example() {
 ```
 
 # 1.0 Roadmap
-* Project website
-* Project documentation
 * Runtime CSS generation
-* TypeScript support 
+* Dynamic CSS support through template literals.
+* SSR support
+* Documentation
+* Website
 
-# 1.0 Considerations
-* FlowType support
-* React Native support
-* Server-side Rendering support
-* Opt-in AOT compilation
-* Dynamic CSS by using template literals.
 
 
