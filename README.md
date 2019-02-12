@@ -25,6 +25,7 @@ function Example() {
 ```
 
 # 1.0 Roadmap
+* TypeScript support
 * Runtime CSS generation
 * Dynamic CSS support through template literals.
 * SSR support
