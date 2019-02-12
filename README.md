@@ -1,5 +1,5 @@
 > ## 🛠 Status: In Development
-> useStyle is currently in development.
+> useStyle is currently in development. v0.1 is on its way to be released mid-February.
 
 # useStyle
 React hook applying scoped CSS to a component.
