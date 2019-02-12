@@ -35,5 +35,6 @@ function Example() {
 * React Native support
 * Server-side Rendering support
 * Opt-in AOT compilation
+* Dynamic CSS by using template literals.
 
 
