@@ -27,6 +27,8 @@ yarn add react-use-style
 # How to use
 
 ```javascript
+import { useStyle } from "react-use-style";
+
 function Example() {
   const style = useStyle(`
     .red {
