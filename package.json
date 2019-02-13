@@ -1,0 +1,25 @@
+{
+  "name": "react-use-style",
+  "version": "0.0.0",
+  "description": "React hook generating scoped CSS for components.",
+  "author": "Michal Pietraszko (@pietmichal)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pietmichal/react-use-style.git"
+  },
+  "main": "index.ts",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.3",
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.3.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  }
+}
