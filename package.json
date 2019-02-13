@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/pietmichal/react-use-style.git"
   },
-  "main": "index.ts",
+  "main": "lib/index.js",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
