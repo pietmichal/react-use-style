@@ -26,6 +26,8 @@ yarn add react-use-style
 
 # How to use
 
+## Static styles
+
 ```javascript
 import { useStyle } from "react-use-style";
 
@@ -41,11 +43,46 @@ function Example() {
 }
 ```
 
+## Dynamic styles
+
+```javascript
+import { useStyle } from "react-use-style";
+
+function Example() {
+  const style = useStyle(`
+    .red {
+      color: red;
+      font-weight: bold;
+    }
+  `);
+
+  return <p className={style.red}>Lorem ipsum dolor sit amet.</p>;
+}
+```
+
+## Themeing
+
+```javascript
+import { useStyle } from "react-use-style";
+
+function Example() {
+  const theme = useContext(ThemeContext);
+  const style = useStyle(`
+    .red {
+      color: ${theme.red};
+      font-weight: ${theme.fontBold};
+    }
+  `);
+
+  return <p className={style.red}>Lorem ipsum dolor sit amet.</p>;
+}
+```
+
 # 1.0 Roadmap
 
-- TypeScript support
-- Runtime CSS generation
-- Dynamic CSS support through template literals.
-- SSR support
-- Documentation
-- Website
+- TypeScript support ✅
+- Static CSS generation ✅
+- Dynamic CSS generation ☑️
+- SSR support ☑️
+- Documentation ☑️
+- Website ☑️

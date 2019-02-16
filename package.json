@@ -9,6 +9,14 @@
   },
   "main": "lib/index.js",
   "license": "MIT",
+  "files": [
+    "./lib/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^23.3.14",
