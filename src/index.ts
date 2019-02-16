@@ -1,2 +1,2 @@
-import { useStyle } from "./use-style-hook";
+import { useStyle } from "./use-style-hook/use-style-hook";
 export { useStyle };
