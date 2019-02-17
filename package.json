@@ -1,6 +1,6 @@
 {
   "name": "react-use-style",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React hook generating scoped CSS for components.",
   "author": "Michal Pietraszko (@pietmichal)",
   "repository": {
@@ -10,7 +10,7 @@
   "main": "lib/index.js",
   "license": "MIT",
   "files": [
-    "./lib/",
+    "lib/**/*",
     "LICENSE",
     "README.md"
   ],
