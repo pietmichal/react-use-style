@@ -48,7 +48,10 @@ function Example() {
 ## Dynamic Styles with Themeing
 
 ```javascript
+import React, { useContext } from "react";
 import { useStyle, css } from "react-use-style";
+
+const ThemeContext = React.createContext({ red: "red" });
 
 function Example() {
   const theme = useContext(ThemeContext);
