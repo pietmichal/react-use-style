@@ -4,6 +4,8 @@
 
 # useStyle
 
+[![CircleCI](https://circleci.com/gh/pietmichal/react-use-style/tree/master.svg?style=svg)](https://circleci.com/gh/pietmichal/react-use-style/tree/master)
+
 React hook applying scoped CSS to a component.
 
 # Goal
@@ -43,24 +45,7 @@ function Example() {
 }
 ```
 
-## Dynamic styles
-
-```javascript
-import { useStyle } from "react-use-style";
-
-function Example() {
-  const style = useStyle(`
-    .red {
-      color: red;
-      font-weight: bold;
-    }
-  `);
-
-  return <p className={style.red}>Lorem ipsum dolor sit amet.</p>;
-}
-```
-
-## Themeing
+## Dynamic Styles with Themeing
 
 ```javascript
 import { useStyle } from "react-use-style";
