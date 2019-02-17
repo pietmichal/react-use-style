@@ -45,6 +45,40 @@ function Example() {
 }
 ```
 
+## Dynamic Styles Based On Component State
+```
+import React, { useState, useEffect } from "react";
+import { useStyle, css } from "react-use-style";
+
+export function Example() {
+  const [color, setColor] = useState("red");
+  const [number, setNumber] = useState(0);
+
+  const style = useStyle(css`
+    .foo {
+      color: ${color};
+      font-weight: bold;
+    }
+  `);
+
+  useEffect(() => {
+    let interval = setInterval(() => setNumber(Math.floor(Math.random() * 1000)), 1000);
+    return () => interval.unref();
+  }, []);
+
+  return (
+    <>
+      <p className={style.foo}>The number is: {number}</p>
+      <br />
+      <button onClick={() => setColor("red")}>red</button>
+      <button onClick={() => setColor("green")}>green</button>
+      <button onClick={() => setColor("blue")}>blue</button>
+    </>
+  );
+}
+```
+
+
 ## Dynamic Styles with Themeing
 
 ```javascript
