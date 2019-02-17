@@ -43,7 +43,7 @@ describe("useStyle hook", () => {
   it("returns different style map on subsequent calls when style changes", () => {
     let color = "red";
     let fontWeight = "bold";
-    const input = css`
+    const input = () => css`
       .foo {
         color: ${color};
       }
@@ -53,7 +53,7 @@ describe("useStyle hook", () => {
     `;
 
     let style: any;
-    const component = testHook(() => (style = useStyle(input)));
+    const component = testHook(() => (style = useStyle(input())));
 
     const expectedStyle = { ...style };
     style = null;
