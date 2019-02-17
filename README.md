@@ -67,7 +67,7 @@ function Example() {
 
 - TypeScript support ✅
 - Static CSS generation ✅
-- Dynamic CSS generation ☑️
+- Dynamic CSS generation ✅
 - SSR support ☑️
 - Documentation ☑️
 - Website ☑️
