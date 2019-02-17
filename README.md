@@ -1,12 +1,14 @@
 > ## 🛠 Status: In Development
 >
 > useStyle is currently in development. v0.1 is on its way.
+>
+> Feel free to install the latest build from npm but it being in sync with the repo is not guaranteed at the moment.
 
-# useStyle
+# react-use-style
 
 [![CircleCI](https://circleci.com/gh/pietmichal/react-use-style/tree/master.svg?style=svg)](https://circleci.com/gh/pietmichal/react-use-style/tree/master)
 
-React hook applying scoped CSS to a component.
+`useStyle` React hook applying scoped CSS to a component.
 
 # Goal
 
