@@ -1,3 +1,5 @@
+import { IStyleData } from "./style-data.interface";
+
 // note: naive implementation - what if someone uses a variable at the beginning of the string?
 export function styleDataToString(data: IStyleData): string {
   const str = data.strings

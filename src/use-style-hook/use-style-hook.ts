@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { generateStyle } from "../style-generator/style-generator";
 import { areArraysEqual } from "./are-arrays-equal";
 import { styleDataToString } from "./style-data-to-string";
+import { IStyleData } from "./style-data.interface";
 
 interface IStyle {
   [className: string]: string;
