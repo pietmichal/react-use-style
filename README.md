@@ -46,7 +46,8 @@ function Example() {
 ```
 
 ## Dynamic Styles Based On Component State
-```
+
+```javascript
 import React, { useState, useEffect } from "react";
 import { useStyle, css } from "react-use-style";
 
