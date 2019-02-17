@@ -31,10 +31,10 @@ yarn add react-use-style
 ## Static styles
 
 ```javascript
-import { useStyle } from "react-use-style";
+import { useStyle, css } from "react-use-style";
 
 function Example() {
-  const style = useStyle(`
+  const style = useStyle(css`
     .red {
       color: red;
       font-weight: bold;
@@ -48,11 +48,11 @@ function Example() {
 ## Dynamic Styles with Themeing
 
 ```javascript
-import { useStyle } from "react-use-style";
+import { useStyle, css } from "react-use-style";
 
 function Example() {
   const theme = useContext(ThemeContext);
-  const style = useStyle(`
+  const style = useStyle(css`
     .red {
       color: ${theme.red};
       font-weight: ${theme.fontBold};
