@@ -1,6 +1,6 @@
 > ## 🛠 Status: In Development
 >
-> useStyle is currently in development. v0.1 is on its way to be released mid-February.
+> useStyle is currently in development. v0.1 is on its way.
 
 # useStyle
 
