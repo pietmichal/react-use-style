@@ -58,7 +58,7 @@ function Example() {
   const style = useStyle(css`
     .red {
       color: ${theme.red};
-      font-weight: ${theme.fontBold};
+      font-weight: bold;
     }
   `);
 
