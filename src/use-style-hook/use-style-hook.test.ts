@@ -1,9 +1,9 @@
 import { testHook } from "react-testing-library";
-import { useStyle } from "./use-style-hook";
+import { useStyle, css } from "./use-style-hook";
 
 describe("useStyle hook", () => {
   it("returns a style map", () => {
-    const input = `
+    const input = css`
       .foo {
         color: red;
       }
@@ -20,7 +20,7 @@ describe("useStyle hook", () => {
   });
 
   it("returns the same style map on subsequent calls when style is the same", () => {
-    const input = `
+    const input = css`
       .foo {
         color: red;
       }
@@ -43,7 +43,7 @@ describe("useStyle hook", () => {
   it("returns different style map on subsequent calls when style changes", () => {
     let color = "red";
     let fontWeight = "bold";
-    const input = `
+    const input = css`
       .foo {
         color: ${color};
       }
