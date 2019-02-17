@@ -1,13 +1,10 @@
 import { useRef } from "react";
 import { generateStyle } from "../style-generator/style-generator";
+import { areArraysEqual } from "./are-arrays-equal";
+import { styleDataToString } from "./style-data-to-string";
 
 interface IStyle {
   [className: string]: string;
-}
-
-interface IStyleData {
-  strings: TemplateStringsArray;
-  variables: any[];
 }
 
 export function useStyle<TStyle = IStyle>(data: IStyleData): TStyle {
@@ -16,7 +13,7 @@ export function useStyle<TStyle = IStyle>(data: IStyleData): TStyle {
 
   if (variables.current === null) {
     variables.current = data.variables;
-    style.current = generateStyle<TStyle>(getStyleCssRepresentation(data));
+    style.current = generateStyle<TStyle>(styleDataToString(data));
     return style.current;
   }
 
@@ -25,27 +22,6 @@ export function useStyle<TStyle = IStyle>(data: IStyleData): TStyle {
   }
 
   variables.current = data.variables;
-  style.current = generateStyle<TStyle>(getStyleCssRepresentation(data));
+  style.current = generateStyle<TStyle>(styleDataToString(data));
   return style.current;
-}
-
-export function css(strings: TemplateStringsArray, ...variables: any[]): IStyleData {
-  return {
-    strings,
-    variables
-  };
-}
-
-// note: naive implementation - what if someone uses a variable at the beginning of the string?
-function getStyleCssRepresentation(data: IStyleData): string {
-  const str = data.strings
-    .map((str, index) => {
-      return str + (data.variables[index] ? data.variables[index] : "");
-    })
-    .join("");
-  return str;
-}
-
-function areArraysEqual(arr1: any[], arr2: any[]) {
-  return arr1.every((value, index) => arr2[index] === value);
 }

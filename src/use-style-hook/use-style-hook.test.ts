@@ -1,5 +1,6 @@
 import { testHook } from "react-testing-library";
-import { useStyle, css } from "./use-style-hook";
+import { useStyle } from "./use-style-hook";
+import { css } from "./css-tag";
 
 describe("useStyle hook", () => {
   it("returns a style map", () => {
