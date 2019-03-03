@@ -1,8 +1,6 @@
-> ## 🛠 Status: Halted
->
-> react-use-style development has been halted.
->
-> 
+> ## ⚠️ Project has been cancelled.
+> Consider using Styled-Components, Emotion or CSS modules instead.
+ 
 
 
 # react-use-style
@@ -103,12 +101,3 @@ function Example() {
   return <p className={style.red}>Lorem ipsum dolor sit amet.</p>;
 }
 ```
-
-# 1.0 Roadmap
-
-- TypeScript support ✅
-- Static CSS generation ✅
-- Dynamic CSS generation ✅
-- SSR support ☑️
-- Documentation ☑️
-- Website ☑️
