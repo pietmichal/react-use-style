@@ -13,7 +13,7 @@
 
 # Goal
 
-Providing the simplest and viable way of introducing CSS into React applications. No external dependencies. Just a hook.
+No external dependencies. Just a hook.
 
 # Installation
 
