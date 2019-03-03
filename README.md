@@ -1,8 +1,9 @@
-> ## 🛠 Status: In Development
+> ## 🛠 Status: Halted
 >
-> react-use-style is currently in development. v0.1 is on its way.
+> react-use-style development has been halted.
 >
-> Feel free to install the latest build from npm but it being in sync with the repo is not guaranteed at the moment.
+> 
+
 
 # react-use-style
 
